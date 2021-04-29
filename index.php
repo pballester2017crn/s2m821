@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html <?php language_attributes();?>>
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<h1>Variable</h1>
-	</body>
+<html>
+<body>
+
+
+
+
+<?php
+	$browser = new Browser();
+    if( $browser->getBrowser() == Browser::BROWSER_FIREFOX && $browser->getVersion() >= 2 ) {
+        echo 'You have FireFox version 2 or greater';
+    }
+ ?>  
+<h1>bon dia</h1>
+</body>
 </html>
